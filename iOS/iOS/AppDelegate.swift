@@ -6,13 +6,20 @@
 //
 
 import UIKit
+import Flutter
+// Used to connect plugins (only if you have plugins with iOS platform code).
+import FlutterPluginRegistrant
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    lazy var flutterEngine = FlutterEngine(name: "flutter engine")
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Runs the default Dart entrypoint with a default Flutter route.
+        flutterEngine.run();
+        // Used to connect plugins (only if you have plugins with iOS platform code).
+        GeneratedPluginRegistrant.register(with: self.flutterEngine);
         // Override point for customization after application launch.
         return true
     }
