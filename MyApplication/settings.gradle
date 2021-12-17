@@ -5,7 +5,7 @@ dependencyResolutionManagement {
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
         maven {
-            url '/Users/anggadwiarifandi/AndroidStudioProjects/add_app/build/host/outputs/repo'
+            url '/Users/anggadwiarifandi/AndroidStudioProjects/FlutterAdd2App/add_app/build/host/outputs/repo'
         }
         maven {
             url "https://storage.googleapis.com/download.flutter.io"
